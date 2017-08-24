@@ -1,0 +1,94 @@
+
+	#parent{
+			width: 100%;
+			background-color: blue;
+			display: flex;
+			flex-direction: row;
+			padding: 10px;
+
+			
+		}
+		.child{
+			width: 20%;
+			height: 100px;
+			background-color: white;
+			opacity: 0.8;
+			margin: 0 auto;
+			
+		}
+		.child:nth-child(1){
+			background-color: orange;
+		}
+		.child:nth-child(2){
+			background-color: yellow;
+		}
+		@media only screen and (min-width: 320px){
+			#parent{
+				
+				flex-direction: column;
+				width: 320px;
+
+			}
+			.child:nth-child(2){
+				
+				width: 320px;
+				background-color: beige;
+			}
+		}
+	@media only screen and (min-width: 375px){
+			#parent{
+				
+				flex-direction: column;
+				width: 100%;
+
+			}
+			.child:nth-child(2){
+				
+				width: 320px;
+				background-color: yellow;
+			}
+		}
+		@media only screen and (min-width: 425px){
+			#parent{
+				
+				flex-direction: column;
+				width: 100%;
+
+			}
+			.child:nth-child(1){
+				
+				width: 400px;
+				background-color: pink;
+			}
+		}
+		@media only screen and (min-width: 768px){
+			#parent{
+				
+				flex-direction: column;
+				width: 100%;
+
+			}
+			.child:nth-child(1){
+				
+				width: 600px;
+				background-color: red;
+			}
+		}
+		@media only screen and (min-width: 1024px){
+			#parent{
+				
+				flex-direction: column;
+				width: 100%;
+
+			}
+			.child:nth-child(1){
+				
+				width: 600px;
+				background-color: red;
+			}
+			.child:nth-child(2){
+				
+				width: 600px;
+				background-color: pink;
+			}
+		}
